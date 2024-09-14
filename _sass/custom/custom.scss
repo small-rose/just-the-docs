@@ -1,1 +1,37 @@
 // custom SCSS (or CSS) goes here
+.site-nav{
+
+}
+
+/* 为滚动容器添加类名 'custom-scrollbar' */
+.site-nav {
+  overflow-y: scroll;
+}
+ 
+/* 美化滚动条的样式 */
+.site-nav::-webkit-scrollbar {
+  width: 10px; /* 设置滚动条的宽度 */
+}
+ 
+.site-nav::-webkit-scrollbar-track {
+  background: #f1f1f1; /* 滚动条轨道的背景颜色 */
+}
+ 
+.site-nav::-webkit-scrollbar-thumb {
+  background: #888; /* 滚动条实际可拖动部分的颜色 */
+}
+ 
+.site-nav::-webkit-scrollbar-thumb:hover {
+  background: #555; /* 滚动条实际可拖动部分的悬停颜色 */
+}
+
+
+/*  firfox */
+.site-nav {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}
+/*  ie  edge */
+.site-nav {
+  -ms-overflow-style: scrollbar;
+}
