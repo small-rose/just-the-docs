@@ -59,8 +59,9 @@ pre, code {
 
 // 表格、卡片等 Bootstrap 化
 .table {
-  @extend .table;
-  @extend .table-hover;
+  @extend .table !optional;       // 加 !optional
+  @extend .table-hover !optional; // 如果有，也加
+  // 其他样式...
 }
 
 // custom SCSS (or CSS) goes here
