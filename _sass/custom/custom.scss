@@ -1,6 +1,6 @@
 // 先导入 Just the Docs 的变量（可选，确保覆盖顺序正确）
 //@import "just-the-docs";
-
+$primary: #4353FA !default;  // 一个默认蓝色，Just the Docs 原版类似颜色
 // 额外 Docsy-like 覆盖样式
 body {
   background: #fff;
