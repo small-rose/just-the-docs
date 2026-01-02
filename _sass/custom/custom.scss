@@ -1,6 +1,17 @@
 // 先导入 Just the Docs 的变量（可选，确保覆盖顺序正确）
 //@import "just-the-docs";
-$primary: #4353FA !default;  // 一个默认蓝色，Just the Docs 原版类似颜色
+
+// === Docsy-like 颜色变量（后期只需改这里） ===
+$primary: #30638e !default;       // 主色：深蓝（原 Docsy Hugo 默认，可改成你喜欢的，如 #1968B1）
+$secondary: #ffa630 !default;     // 辅助色：橙黄
+$success: #3772ff !default;
+$info: #c0e0de !default;
+$warning: #ed6a5a !default;
+$danger: #ed6a5a !default;
+$light: #f8f9fa !default;
+$dark: #212529 !default;
+
+
 // 字体
 $font-family-base: 'Roboto', sans-serif !default;
 $headings-font-family: 'Google Sans', 'Roboto', sans-serif !default;
