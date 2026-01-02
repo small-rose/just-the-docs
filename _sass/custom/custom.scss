@@ -1,3 +1,48 @@
+// 先导入 Just the Docs 的变量（可选，确保覆盖顺序正确）
+//@import "just-the-docs";
+
+// 额外 Docsy-like 覆盖样式
+body {
+  background: #fff;
+  line-height: 1.7;
+}
+
+.site-header {
+  background: $primary;
+  box-shadow: $box-shadow;
+  border-radius: 0 0 $border-radius $border-radius;
+}
+
+.site-nav {
+  background: $light;
+  border-right: 1px solid #e9ecef;
+  box-shadow: $box-shadow;
+  border-radius: $border-radius;
+  padding: 1rem;
+}
+
+.main-content {
+  background: #fff;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  padding: $content-padding;
+  margin: 2rem 0;
+}
+
+.btn-primary {
+  border-radius: 999px;  // 胶囊按钮，像 Docsy
+}
+
+pre, code {
+  border-radius: $border-radius;
+}
+
+// 表格、卡片等 Bootstrap 化
+.table {
+  @extend .table;
+  @extend .table-hover;
+}
+
 // custom SCSS (or CSS) goes here
 body, html, *{
   scrollbar-width: thin;
