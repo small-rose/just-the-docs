@@ -249,9 +249,10 @@ a {
   text-decoration: none !important;
   border-left: 1px solid transparent !important;
 }
-a:hover, a.active {
+
+#site-nav > a:hover, #site-nav > a.active {
   color: #6B4226 !important;
-  border-left: 1px solid #8B5C2E !important;
+  border-left: 4px solid #8B5C2E !important;
 }
 
 /* ===== 侧边栏优化 ===== */
