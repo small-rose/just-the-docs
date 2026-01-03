@@ -205,3 +205,67 @@ h1, h2, h3, h4, h5, h6 {
 code, pre, .highlight {
   font-family: inherit !important;
 }
+
+
+
+/* ================ 全局 ================ */
+body {
+  background-color: #fdfdfd !important;
+  color: #2d3748 !important;
+  font-family: "Songti SC", "Noto Serif SC", "STSong", serif !important;
+}
+
+/* ================ 链接 ================ */
+a {
+  color: #8B5C2E !important;
+}
+a:hover,
+a:active {
+  color: #6B4226 !important;
+  text-decoration: underline !important;
+}
+
+/* ================ 标题 ================ */
+h1, h2, h3, h4, h5, h6 {
+  color: #2d3748 !important;
+  font-weight: 600 !important;
+}
+
+/* ================ 导航栏 ================ */
+.navbar {
+  background-color: #fdfdfd !important;
+  border-bottom: 1px solid #e2e8f0 !important;
+}
+.navbar a {
+  color: #8B5C2E !important;
+}
+
+/* ================ 侧边栏 ================ */
+.sidebar {
+  background-color: #fdfdfd !important;
+  border-right: 1px solid #e2e8f0 !important;
+}
+.sidebar a {
+  color: #2d3748 !important;
+}
+.sidebar a:hover {
+  color: #8B5C2E !important;
+}
+
+/* ================ 正文容器 ================ */
+main {
+  background-color: #fdfdfd !important;
+}
+
+/* ================ 表格/代码块 ================ */
+code,
+pre,
+code.highlighter-rouge {
+  background-color: #f8f9fa !important;
+  border: 1px solid #e2e8f0 !important;
+}
+
+/* ================ 分隔线 ================ */
+hr {
+  border-color: #e2e8f0 !important;
+}
