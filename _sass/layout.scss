@@ -30,7 +30,9 @@
       // disable for Max(), we want to use the CSS max() function
       margin-left: Max(
         #{$nav-width},
-        calc((100% - #{$nav-width + $content-width}) / 2 + #{$nav-width})
+              //zzy 改成全屏
+        //calc((100% - #{$nav-width + $content-width}) / 2 + #{$nav-width})
+        #{$nav-width}
       );
       // stylelint-enable function-name-case
     }

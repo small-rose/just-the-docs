@@ -1,69 +1,6 @@
 // 先导入 Just the Docs 的变量（可选，确保覆盖顺序正确）
 //@import "just-the-docs";
 
-// === Docsy-like 颜色变量（后期只需改这里） ===
-$primary: #30638e !default;       // 主色：深蓝（原 Docsy Hugo 默认，可改成你喜欢的，如 #1968B1）
-$secondary: #ffa630 !default;     // 辅助色：橙黄
-$success: #3772ff !default;
-$info: #c0e0de !default;
-$warning: #ed6a5a !default;
-$danger: #ed6a5a !default;
-$light: #f8f9fa !default;
-$dark: #212529 !default;
-
-
-// 字体
-$font-family-base: 'Roboto', sans-serif !default;
-$headings-font-family: 'Google Sans', 'Roboto', sans-serif !default;
-
-// 其他 Docsy 风格
-$border-radius: 0.75rem !default;
-$box-shadow: 0 4px 12px rgba(0,0,0,0.08) !default;
-$content-padding: 3rem !default;
-
-// 额外 Docsy-like 覆盖样式
-body {
-  background: #fff;
-  line-height: 1.7;
-}
-
-.site-header {
-  background: $primary;
-  box-shadow: $box-shadow;
-  border-radius: 0 0 $border-radius $border-radius;
-}
-
-.site-nav {
-  background: $light;
-  border-right: 1px solid #e9ecef;
-  box-shadow: $box-shadow;
-  border-radius: $border-radius;
-  padding: 1rem;
-}
-
-.main-content {
-  background: #fff;
-  border-radius: $border-radius;
-  box-shadow: $box-shadow;
-  padding: $content-padding;
-  margin: 2rem 0;
-}
-
-.btn-primary {
-  border-radius: 999px;  // 胶囊按钮，像 Docsy
-}
-
-pre, code {
-  border-radius: $border-radius;
-}
-
-// 表格、卡片等 Bootstrap 化
-.table {
-  @extend .table !optional;       // 加 !optional
-  @extend .table-hover !optional; // 如果有，也加
-  // 其他样式...
-}
-
 // custom SCSS (or CSS) goes here
 body, html, *{
   scrollbar-width: thin;
@@ -102,3 +39,4 @@ body, html, *{
 .site-nav {
   -ms-overflow-style: scrollbar;
 }
+
