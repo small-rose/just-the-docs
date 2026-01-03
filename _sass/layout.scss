@@ -23,7 +23,7 @@
   & + .main {
     @include mq(md) {
       margin-left: $nav-width-md;
-      margin-right: $nav-width-md;
+
     }
 
     @include mq(lg) {
@@ -69,6 +69,7 @@
 .main-content-wrap {
   padding-top: $gutter-spacing-sm;
   padding-bottom: $gutter-spacing-sm;
+  margin-right: $nav-width-md;
 
   @include container;
 
