@@ -208,64 +208,78 @@ code, pre, .highlight {
 
 
 
-/* ================ 全局 ================ */
-body {
-  background-color: #fdfdfd !important;
-  color: #2d3748 !important;
-  font-family: "Songti SC", "Noto Serif SC", "STSong", serif !important;
+/* ================ 全局 文字站专用 ================ */
+
+/* ===== 全局背景与字体 ===== */
+ body {
+   background-color: #fdf9f3 !important; /* 宣纸米白 */
+   color: #333333 !important;           /* 深灰黑，非纯黑，护眼 */
+   font-family: "Songti SC", "Noto Serif SC", "STSong", "SimSun", serif !important;
+   line-height: 1.7 !important;
+   font-size: 17px !important;           /* 稍大，提升可读性 */
+ }
+
+/* ===== 标题优化 ===== */
+h1, h2, h3, h4 {
+  font-weight: 600 !important;
+  margin-top: 1.8em !important;
+  margin-bottom: 0.8em !important;
+  color: #2c1a0f !important;           /* 深褐，如墨 */
+}
+h1 { font-size: 28px !important; }
+h2 { font-size: 24px !important; }
+h3 { font-size: 21px !important; }
+
+/* ===== 段落与列表 ===== */
+p {
+  margin-bottom: 1.2em !important;
+  text-align: justify;                 /* 两端对齐，更像书本 */
+}
+ul, ol {
+  padding-left: 1.8em !important;
+  margin-bottom: 1.2em !important;
+}
+li {
+  margin-bottom: 0.4em !important;
 }
 
-/* ================ 链接 ================ */
+/* ===== 链接颜色（古铜色） ===== */
 a {
-  color: #8B5C2E !important;
+  color: #8B5C2E !important;           /* 古铜/青铜色 */
+  text-decoration: none !important;
+  border-bottom: 1px solid transparent !important;
 }
-a:hover,
-a:active {
+a:hover {
   color: #6B4226 !important;
-  text-decoration: underline !important;
+  border-bottom: 1px solid #8B5C2E !important;
 }
 
-/* ================ 标题 ================ */
-h1, h2, h3, h4, h5, h6 {
-  color: #2d3748 !important;
+/* ===== 侧边栏优化 ===== */
+.nav-list .nav-list-item a.active {
+  color: #8B5C2E !important;
   font-weight: 600 !important;
 }
-
-/* ================ 导航栏 ================ */
-.navbar {
-  background-color: #fdfdfd !important;
-  border-bottom: 1px solid #e2e8f0 !important;
-}
-.navbar a {
-  color: #8B5C2E !important;
+.nav-list .nav-list-item a {
+  color: #4a4a4a !important;
 }
 
-/* ================ 侧边栏 ================ */
-.sidebar {
-  background-color: #fdfdfd !important;
-  border-right: 1px solid #e2e8f0 !important;
-}
-.sidebar a {
-  color: #2d3748 !important;
-}
-.sidebar a:hover {
-  color: #8B5C2E !important;
-}
-
-/* ================ 正文容器 ================ */
+/* ===== 容器宽度（更适合长文） ===== */
 main {
-  background-color: #fdfdfd !important;
+  max-width: 920px !important;         /* 原为 800px，稍宽更舒适 */
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
 }
 
-/* ================ 表格/代码块 ================ */
-code,
-pre,
-code.highlighter-rouge {
-  background-color: #f8f9fa !important;
-  border: 1px solid #e2e8f0 !important;
-}
-
-/* ================ 分隔线 ================ */
+/* ===== 分隔线/边框 ===== */
 hr {
-  border-color: #e2e8f0 !important;
+  border-color: #e8dccc !important;    /* 浅米金，呼应背景 */
 }
+
+/* ===== 代码/行内元素（如需） ===== */
+code {
+  background-color: #f5f0e6 !important;
+  color: #6b4226 !important;
+  padding: 0.2em 0.4em !important;
+  border-radius: 3px !important;
+}
+//-------------------文字站专用------------------
