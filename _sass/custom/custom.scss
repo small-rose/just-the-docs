@@ -181,3 +181,27 @@ body, html, *{
     .nc, .nf { color: #88CCFF; }
   }
 }
+
+
+/* 全站强制等宽字体 */
+body, html {
+  font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Menlo, Monaco, Consolas, 'Courier New', monospace !important;
+  font-size: 1rem;           /* 调整大小，避免太小 */
+  line-height: 1.7;          /* 加大行距，提高可读性 */
+}
+
+/* 标题也强制等宽（可选，如果你想保持比例字体标题，可以注释掉） */
+h1, h2, h3, h4, h5, h6 {
+  font-family: inherit !important;
+  font-weight: 600;
+}
+
+/* 导航栏文字 */
+.site-nav, .sidebar-nav, .nav-list a {
+  font-family: inherit !important;
+}
+
+/* 代码块保持一致 */
+code, pre, .highlight {
+  font-family: inherit !important;
+}
