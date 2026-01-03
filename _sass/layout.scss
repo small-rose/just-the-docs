@@ -16,7 +16,8 @@
   }
 
   @include mq(lg) {
-    width: calc((100% - #{$nav-width + $content-width}) / 2 + #{$nav-width});
+    //zzy 改成全屏
+    //width: calc((100% - #{$nav-width + $content-width}) / 2 + #{$nav-width});
     min-width: $nav-width;
   }
 
@@ -59,6 +60,7 @@
 
 .main {
   margin: auto;
+  margin-left: #{$nav-width} !important;
 
   @include mq(md) {
     position: relative;
