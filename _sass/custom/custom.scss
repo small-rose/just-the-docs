@@ -249,7 +249,7 @@ a {
   text-decoration: none !important;
   border-left: 1px solid transparent !important;
 }
-a:hover {
+a:hover, a.active {
   color: #6B4226 !important;
   border-left: 1px solid #8B5C2E !important;
 }
