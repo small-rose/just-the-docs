@@ -103,3 +103,13 @@ body, html, *{
 
 
 h2.text-delta + ul.section-nav { display: none; }  // 隐藏原 TOC 标题和列表
+
+@media (min-width: 800px) { // 仅在大屏幕显示在右侧
+  .my-right-toc {
+    float: right;
+    width: 250px;
+    margin-left: 20px;
+    position: sticky;
+    top: 2rem;
+  }
+}
