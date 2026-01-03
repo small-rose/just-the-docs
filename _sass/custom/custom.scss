@@ -1,5 +1,7 @@
 // 先导入 Just the Docs 的变量（可选，确保覆盖顺序正确）
 //@import "just-the-docs";
+// 添加这行（如果还没有）
+$primary: #4353FA !default;  // Just the Docs 原版类似蓝色，作为 fallback
 
 // custom SCSS (or CSS) goes here
 body, html, *{
