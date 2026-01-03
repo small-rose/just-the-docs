@@ -1,0 +1,13 @@
+{% if page.has_toc != false and page.toc != false %}
+<div class="right-toc d-none d-xl-block">
+    <div class="right-toc-inner">
+        <h3 class="text-delta">本页内容</h3>
+        {% include vendor/anchor_headings.html
+        html=content
+        beforeHeading=true
+        anchorBody=""
+        anchorClass="anchor-heading"
+        listClass="right-toc-list" %}
+    </div>
+</div>
+{% endif %}
