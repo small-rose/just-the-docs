@@ -16,8 +16,7 @@
   }
 
   @include mq(lg) {
-    //zzy 改成全屏
-    //width: calc((100% - #{$nav-width + $content-width}) / 2 + #{$nav-width});
+    width: calc((100% - #{$nav-width + $content-width}) / 2 + #{$nav-width});
     min-width: $nav-width;
   }
 
@@ -31,9 +30,7 @@
       // disable for Max(), we want to use the CSS max() function
       margin-left: Max(
         #{$nav-width},
-              //zzy 改成全屏
-        //calc((100% - #{$nav-width + $content-width}) / 2 + #{$nav-width})
-        #{$nav-width}
+        calc((100% - #{$nav-width + $content-width}) / 2 + #{$nav-width})
       );
       // stylelint-enable function-name-case
     }
@@ -60,7 +57,6 @@
 
 .main {
   margin: auto;
-  margin-left: #{$nav-width} !important;
 
   @include mq(md) {
     position: relative;
