@@ -134,52 +134,57 @@ body, html, *{
 
 
 
-/* 恢复 Python 文档风格代码高亮 */
+/* 恢复 v0.3.3 文档风格代码高亮 */
 .highlight {
-  background: #f8f8f8;           /* 浅米白背景 */
-  border: 1px solid #ddd;        /* 细边框 */
-  border-radius: 6px;            /* 轻微圆角 */
-  padding: 1rem;
-  margin: 1.5rem 0;
-  overflow: auto;
-  font-size: 1rem;               /* 字体稍大 */
-  line-height: 1.5;
+  background: #f8f8f8;  // 代码块背景，更温和
 
-  pre {
-    margin: 0;
-    padding: 0;
-  }
-
-  /* 紫色关键词 (from, def, class 等) */
-  .k, .kd, .kn, .kp, .kr, .kt { color: #AA22FF; font-weight: bold; }
-
-  /* 蓝色字符串 */
-  .s, .s1, .s2, .sb, .sc, .sd, .se, .sh, .si, .sx { color: #BB4444; }
-
-  /* 绿色注释 */
-  .c, .cm, .c1, .cs { color: #408080; font-style: italic; }
-
-  /* 类名/函数名 深蓝 */
-  .nc, .nf, .nn { color: #0000FF; }
-
-  /* 灰色参数等 */
-  .o, .ow { color: #666666; }
-
-  /* 数字 橙色 */
-  .m, .mf, .mh, .mi, .mo { color: #009999; }
+  .c  { color: #998; font-style: italic; }     // 注释：灰色斜体
+  .err { color: #a61717; background-color: #e3d2d2; }
+  .k  { color: #458; font-weight: bold; }      // 关键字：深蓝
+  .o  { font-weight: bold; }
+  .cm { color: #998; font-style: italic; }
+  .cp { color: #999; }
+  .c1 { color: #998; font-style: italic; }
+  .cs { color: #999; font-weight: bold; font-style: italic; }
+  .gd { color: #000; background-color: #fdd; }
+  .ge { font-style: italic; }
+  .gr { color: #a00; }
+  .gh { color: #999; }
+  .gi { color: #000; background-color: #dfd; }
+  .go { color: #888; }
+  .gp { color: #555; }
+  .gs { font-weight: bold; }
+  .gu { color: #aaa; }
+  .gt { color: #a00; }
+  .kc { color: #458; font-weight: bold; }
+  .kd { color: #458; font-weight: bold; }
+  .kn { color: #458; font-weight: bold; }
+  .kp { color: #458; font-weight: bold; }
+  .kr { color: #458; font-weight: bold; }
+  .kt { color: #458; font-weight: bold; }        // 类类型
+  .m  { color: #099; }                         // 数字：绿蓝
+  .s  { color: #d14; }                         // 字符串：柔和红
+  .na { color: #008080; }                      // 属性
+  .nb { color: #0086B3; }                      // 内置函数
+  .nc { color: #458; font-weight: bold; }
+  .no { color: #008080; }
+  .ni { color: #800080; }
+  .ne { color: #900; font-weight: bold; }
+  .nf { color: #900; font-weight: bold; }       // 函数
+  .nn { color: #555; }
+  .nt { color: #000080; }                      // 标签
+  .nv { color: #008080; }
+  .ow { color: #000; font-weight: bold; }
+  .w  { color: #bbb; }
+  // 更多类可根据需要补充
 }
 
-/* 暗色模式适配（可选） */
-@media (prefers-color-scheme: dark) {
-  .highlight {
-    background: #1e1e1e;
-    border-color: #444;
-
-    .k, .kd, .kn, .kp, .kr, .kt { color: #DDBBFF; }
-    .s, .s1, .s2 { color: #FF8888; }
-    .c, .cm, .c1 { color: #66B88A; }
-    .nc, .nf { color: #88CCFF; }
-  }
+// 可选：微调代码块容器（更温和外观）
+.highlighter-rouge {
+  background: #f8f8f8;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 0.5em;
 }
 
 
