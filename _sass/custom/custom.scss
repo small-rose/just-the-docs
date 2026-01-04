@@ -12,6 +12,7 @@ body, html, *{
 .site-nav {
   overflow-y: scroll;
   scrollbar-gutter: stable;
+  padding-top: 2em !important;
 }
  
 /* 美化滚动条的样式 */
@@ -189,7 +190,7 @@ p {
   text-align: justify;                 /* 两端对齐，更像书本 */
 }
 ul, ol {
-  padding-left: 1rem !important;
+  padding-left: 0.8rem !important;
   //margin-bottom: 1.2em !important;
 }
 li {
