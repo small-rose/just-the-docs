@@ -112,9 +112,9 @@ body, html, *{
   overflow-y: auto;
   background: #ffffff;
   padding: 1.5rem;
-  border-radius: 12px;
+  //border-radius: 12px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.1);
-  border-left: 4px solid #4353FA;
+  border-left: 2px solid #8B5C2E;
   z-index: 10;
   font-size: 0.85rem;
   margin-top: 2em ;
@@ -250,7 +250,7 @@ a {
   border-left: 1px solid transparent !important;
 }
 
-.site-nav a:hover, .site-nav a.active {
+.site-nav a:hover, .site-nav a.active, .site-nav li.active {
   color: #6B4226 !important;
   border-left: 4px solid #8B5C2E !important;
 }
