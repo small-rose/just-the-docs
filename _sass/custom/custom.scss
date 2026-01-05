@@ -97,12 +97,6 @@ body, html, *{
   section > ul > li > ul > li > ul a { padding-left: 2rem; font-size: 0.9rem; }
 }
 
-// 小屏幕隐藏右侧 TOC
-@media (max-width: 1400px) {
-  .right-toc { display: none; }
-}
-
-
 
 .my-right-toc {
   position: fixed;           /* 关键：脱离文档流 */
@@ -128,7 +122,7 @@ body, html, *{
   .my-right-toc {
     display: none;
   }
-  .main-content {
+  .main-content, .main-content-wrap{
     margin-right: 0;
   }
 }
