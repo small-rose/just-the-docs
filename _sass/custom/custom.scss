@@ -102,7 +102,7 @@ body, html, *{
 }
 
 
-
+@media (min-width: 900px) {
 .my-right-toc {
   position: fixed;           /* 关键：脱离文档流 */
   top: 3.75rem;                /* 距离顶部，避开 header */
@@ -131,7 +131,7 @@ body, html, *{
     margin-right: 0;
   }
 }
-
+}
 
 
 /* 恢复 v0.3.3 文档风格代码高亮 */
