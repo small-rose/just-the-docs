@@ -121,7 +121,7 @@ body, html, *{
   /* 可选：加滚动条美化 */
   scrollbar-width: thin;
 }
-
+}
 // 大屏显示，小屏隐藏/折叠
 @media (max-width: 900px) {
   .my-right-toc {
@@ -131,10 +131,10 @@ body, html, *{
     margin-right: 0;
   }
   .main-content-wrap{
-    margin-right: 0;
+    margin-right: 0 !important;
   }
 }
-}
+
 
 
 /* 恢复 v0.3.3 文档风格代码高亮 */
