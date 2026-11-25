@@ -304,7 +304,23 @@ h1, h2, h3, h4, h5, h6 {
 
 /* 8 · 复制按钮：调淡图标 */
 .main-content div.highlighter-rouge > button svg {
-  fill: #a09bb5;
+  fill: #7253ed;              // 紫色图标
+}
+.main-content div.highlighter-rouge > button:hover svg {
+  fill: #5b36d6;
+}
+
+/* 美化：圆角 + 去掉方角焦点框 */
+.main-content div.highlighter-rouge > button {
+  border-radius: 6px;
+  outline: none !important;   // 干掉浏览器默认的紫色直角 outline
+  transition: background-color .18s ease;
+}
+/* 键盘 Tab 聚焦时给柔和圆形高亮，保留无障碍 */
+.main-content div.highlighter-rouge > button:focus-visible {
+  outline: none !important;
+  background-color: rgba(114, 83, 237, .12);
+  box-shadow: 0 0 0 2px rgba(114, 83, 237, .25);
 }
 
 
