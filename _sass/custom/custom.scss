@@ -209,3 +209,97 @@ h1, h2, h3, h4, h5, h6 {
   font-family: inherit !important;
 }
 
+
+
+/* ============================================================
+   H2 代码块样式 —— 全部内容追加到 _sass/custom/custom.scss 末尾即可
+   效果：左竖线 + 淡紫底 + 头部栏（淡紫）+ JetBrains Mono
+   头部栏右端直接使用主题自带的复制按钮（本身就是图标），不另加圆点避免重复
+   不含任何布局/宽度规则，不碰 layout.scss 的宽屏魔改
+   头部栏左侧文字取自 data-lang 属性（见文件末尾说明）
+   ============================================================ */
+
+/* 1 · 外层容器：淡紫底 + 细边框 + 左竖线 + 圆角，给头部栏留出空间 */
+.main-content div.highlighter-rouge {
+  background-color: #faf9fe !important;
+  border: 1px solid #ece8f7;
+  border-left: 3px solid #7253ed;
+  border-radius: 0 8px 8px 0;
+  position: relative;
+  padding-top: 34px;
+  overflow: hidden;
+}
+
+/* 2 · 头部栏（淡紫）+ 语言名文字 */
+.main-content div.highlighter-rouge::before {
+  content: attr(data-lang);
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  padding: 8px 16px;
+  background: #f2effb;
+  border-bottom: 1px solid #ece8f7;
+  font: 500 11px/1 "JetBrains Mono", monospace;
+  letter-spacing: .02em;
+  color: #8a83a8;
+}
+
+/* 4 · 内层：透明背景 + 留白（同时覆盖 .highlight / pre.highlight 的默认灰底） */
+.main-content div.highlighter-rouge div.highlight,
+.main-content div.highlighter-rouge .highlight,
+.main-content div.highlighter-rouge pre.highlight {
+  background: transparent !important;
+  padding: 16px 18px;
+  margin: 0;
+  border-radius: 0;
+}
+.main-content div.highlighter-rouge pre.highlight { border: 0; }
+
+/* 5 · 代码字体：JetBrains Mono / 13.75px / 行高 1.7 */
+.main-content div.highlighter-rouge pre,
+.main-content div.highlighter-rouge code {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 13.75px;
+  line-height: 1.7;
+}
+
+/* 6 · 语法配色：关键字紫、函数蓝、字符串绿、数字橙、注释灰斜体 */
+.main-content .highlight .k,
+.main-content .highlight .kd,
+.main-content .highlight .kn,
+.main-content .highlight .kp,
+.main-content .highlight .kr,
+.main-content .highlight .kt,
+.main-content .highlight .nt { color: #8250df; }
+
+.main-content .highlight .nf,
+.main-content .highlight .nx,
+.main-content .highlight .nc { color: #0b62b3; }
+
+.main-content .highlight .s,
+.main-content .highlight .s1,
+.main-content .highlight .sb { color: #1a7f5a; }
+
+.main-content .highlight .m,
+.main-content .highlight .mi,
+.main-content .highlight .mf { color: #a15c00; }
+
+.main-content .highlight .c,
+.main-content .highlight .c1,
+.main-content .highlight .cm { color: #9aa0a8; font-style: italic; }
+
+/* 7 · 行内 code */
+.main-content :not(pre) > code {
+  font-family: "JetBrains Mono", monospace;
+  font-size: .86em;
+  background: #f2effb;
+  border: 1px solid #ece8f7;
+  border-radius: 4px;
+  padding: .12em .4em;
+  color: #3a3d44;
+}
+
+/* 8 · 复制按钮：调淡图标 */
+.main-content div.highlighter-rouge > button svg {
+  fill: #a09bb5;
+}
+
