@@ -224,7 +224,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #faf9fe !important;
   border: 1px solid #ece8f7;
   border-left: 3px solid #7253ed;
-  border-radius: 0 8px 8px 0;
+  /* border-radius: 0 8px 8px 0; */
   position: relative;
   padding-top: 16px;
   overflow: hidden;
@@ -262,7 +262,7 @@ h1, h2, h3, h4, h5, h6 {
 .main-content div.highlighter-rouge pre,
 .main-content div.highlighter-rouge code {
   font-family: "JetBrains Mono", monospace;
-  font-size: 13.75px;
+  font-size: 11.75px;
   line-height: 1.55;
 }
 
@@ -293,7 +293,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* 7 · 行内 code */
 .main-content :not(pre) > code {
-  font-family: "JetBrains Mono", monospace;
+  font-family: "JetBrains Mono","Microsoft YaHei", monospace;
   font-size: .86em;
   background: #f2effb;
   border: 1px solid #ece8f7;
@@ -327,5 +327,5 @@ h1, h2, h3, h4, h5, h6 {
 
 /* 仅文章正文区字体，不影响导航/侧栏/页脚 */
 #main-content {
-   font-family: "Sarasa Mono SC", "Microsoft YaHei", "PingFang SC", "Noto Sans SC", sans-serif;
+   font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans SC", "Sarasa Mono SC", sans-serif;
 }
