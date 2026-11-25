@@ -226,7 +226,7 @@ h1, h2, h3, h4, h5, h6 {
   border-left: 3px solid #7253ed;
   border-radius: 0 8px 8px 0;
   position: relative;
-  padding-top: 34px;
+  padding-top: 16px;
   overflow: hidden;
 }
 
@@ -248,18 +248,21 @@ h1, h2, h3, h4, h5, h6 {
 .main-content div.highlighter-rouge .highlight,
 .main-content div.highlighter-rouge pre.highlight {
   background: transparent !important;
-  padding: 16px 18px;
+  padding: 0 ;//16px 18px; 改成 0，消除双层叠加
   margin: 0;
   border-radius: 0;
 }
-.main-content div.highlighter-rouge pre.highlight { border: 0; }
+.main-content div.highlighter-rouge pre.highlight { 
+  padding: 12px 18px;        // 原没有这条，新增：唯一真正的留白层
+  border: 0; 
+}
 
 /* 5 · 代码字体：JetBrains Mono / 13.75px / 行高 1.7 */
 .main-content div.highlighter-rouge pre,
 .main-content div.highlighter-rouge code {
   font-family: "JetBrains Mono", monospace;
   font-size: 13.75px;
-  line-height: 1.7;
+  line-height: 1.55;
 }
 
 /* 6 · 语法配色：关键字紫、函数蓝、字符串绿、数字橙、注释灰斜体 */
